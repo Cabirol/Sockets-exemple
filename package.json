@@ -1,0 +1,28 @@
+{
+  "name": "sockets-exemple",
+  "version": "1.0.0",
+  "description": "Exercici per practicar sockets i serparar front de end",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cabirol/Sockets-exemple.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cabirol/Sockets-exemple/issues"
+  },
+  "homepage": "https://github.com/Cabirol/Sockets-exemple#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
