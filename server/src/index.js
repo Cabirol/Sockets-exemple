@@ -10,14 +10,17 @@ const io = new Server(server, {
   }
 });
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname,'../public/index.html'));
-});
+io.on("connection", (socket) => {
+  console.log(socket.id);
 
-io.on('connection', (socket) => {
-  console.log('a user connected');
+  setInterval(() => socket.emit("hello", "server li diu hello al client"), 5000);
+
+  socket.on("howareyou", (arg) => {
+  console.log(arg);
+});
+  
 });
 
 server.listen(3000, () => {
-  console.log('listening on *:3000');
+  console.log('listening on port:3000');
 });
