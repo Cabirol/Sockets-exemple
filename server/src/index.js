@@ -11,7 +11,7 @@ const io = new Server(server, {
 });
 
 io.on("connection", (socket) => {
-  console.log(socket.id);
+  
 
   setInterval(() => socket.emit("hello", "server li diu hello al client"), 5000);
 
